@@ -39,5 +39,10 @@
 		"gulp-sass": "^4.0.1",
 		"sass": "^1.5.1",
 		"serve": "^8.2.0"
-	}
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"IE 10"
+	]
 }

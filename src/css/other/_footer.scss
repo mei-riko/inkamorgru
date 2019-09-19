@@ -1,0 +1,42 @@
+.footer{
+    background: $dark-grey;
+    color: $white;
+    padding: 10px 0;
+
+    .footer__row{
+        flex-wrap: nowrap;
+    }
+
+    .footer__logo{
+        width: 100px;
+        height: 80px;
+        background: url("../img/INKAM_logo.png") no-repeat left center / contain;
+    }
+    .navbar{
+        .navbar__link{
+            color: $white;
+            &:hover{
+                color: $link-hover-color;
+            }
+        }
+    }
+    .contacts{
+        .contacts__link{
+            &_phone{
+                color: $white;
+                &:hover{
+                    color: $link-hover-color;
+                }
+            }
+        }
+    }
+
+    &-info{
+        padding: 6px 0;
+        background: lighten($color: $dark-grey, $amount: 2%);
+        color: lighten($color: $dark-grey, $amount: 18%);
+        .footer-info__link{
+            color: lighten($color: $dark-grey, $amount: 18%);
+        }
+    }
+}

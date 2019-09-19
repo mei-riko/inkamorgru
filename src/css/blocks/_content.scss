@@ -1,0 +1,25 @@
+.heading{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: $grey;
+
+    text-transform: uppercase;
+}
+
+.subheading{
+    font-weight: bold;
+    font-size: 1rem;
+
+    color: $dark-blue;
+
+    text-transform: uppercase;    
+    &-line{
+        height: 4px;
+        width: 46px;
+        margin-left: 0;
+        margin-bottom: 1.25rem;
+        background: $dark-blue;
+    }
+}

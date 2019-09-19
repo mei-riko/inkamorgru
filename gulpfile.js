@@ -71,7 +71,7 @@ gulp.task('css', function () {
     .pipe(plumber())
     .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
     .pipe(autoprefixer({
-      browsers: ['last 5 versions'],
+      overrideBrowserslist: ['last 5 versions'],
       cascade: false
     }))
     // .pipe(cleanCSS({ level: { 1: { specialComments: 0 } } } )) //uncommit on production

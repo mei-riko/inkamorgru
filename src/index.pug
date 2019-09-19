@@ -3,14 +3,156 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Basic Page
-
+        title Index Page
+        link(href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
         link(href='./css/style.css', rel='stylesheet')
-
     body
-        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-
+        main
+            section.block-header
+                .container
+                    h1.header-block__title Разработка и внедрение 
+                        span.text-blue.text-nowrap IT-решений 
+                        | любой сложности
+                    p.header-block__offer Более 50 компаний выбрали ИНКАМ за неоспоримые преимущества:
+                    .row
+                        .col-9
+                            .advantage
+                                .advantage__item Решения под потребности заказчика
+                                .advantage__item Техническая поддержка 24/7 проекта
+                                .advantage__item Работа со всеми регионами России
+                                .advantage__item Сертифицированный технический персонал
+                                .advantage__item Высокая скорость обработки запросов
+                                .advantage__item Отлаженная схема доставки оборудования
+            section.block-partners
+                .container
+                    .row.align-items-center
+                        .col-3
+                            p.heading Нам доверяют:
+                        .col-9
+                            .slider.slider_logo
+                                .slider__item
+                                    img.img-fluid(src="../img/RT_full_logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/transmash_logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/rzd.jpg")
+            section.block-service
+                .container
+                    .row.no-gutters
+                        .col-4
+                            p.h2 Компетенции компании
+                        .col-4.d-flex
+                            .service.service_modal-btn
+                                .service__title Сетевая инфраструктура
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bl-hide
+                                .service__title Унифицированные коммуникации
+                        .col-4.d-flex
+                            .service.service_modal-btn
+                                .service__title IT-решения
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bl-hide.service_bt-hide
+                                .service__title Комплексные системы мониторинга и&nbsp;анализа
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bl-hide.service_bt-hide
+                                .service__title Проектирование и модернизация 
+                                    span.text-nowrap IT-инфраструктуры
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bt-hide
+                                .service__title Управление комплексными проектами
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bl-hide.service_bt-hide
+                                .service__title Сервисная поддержка
+                        .col-4.d-flex
+                            .service.service_modal-btn.service_bl-hide.service_bt-hide
+                                .service__title Проектирование и&nbsp;модернизация инженерной инфраструктуры ЦОД
+                                .service__content
+            section.block-content
+                .container
+                    .row.align-items-center
+                        .col-5
+                            p.subheading ИНКАМ СЕГОДНЯ
+                            .subheading-line
+                            p Компания Инкам  — ваш надежный поставщик высокотехнологичных и&nbsp;инновационных IT-решений для вашего бизнеса. 
+                                | Мы сотрудничаем с&nbsp;ведущими мировыми вендорами, чье качество продукции проверено годами и&nbsp;является 
+                                | эталоном качественных технологий. 
+                            p За время работы мы внедрили более 100 технологических решений, спроектированных нашими инженерами 
+                                | персонального под&nbsp;нужды и&nbsp;задачи компании заказчика. В&nbsp;нашем активе проекты, 
+                                | реализованные как для&nbsp;российских, так и&nbsp;для&nbsp;международых компаний. 
+                        .col-7
+                            img.img-fluid(src="../img/maps-russia.svg")
+            section.block-task
+                .container
+                    .row
+                        .col-4
+                            p.h3.block-task__title Поставка оборудования для&nbsp;любых задач
+                    .row.no-gutters
+                        .col-3.d-flex
+                            .task.task_1
+                                .task__title Хранение данных
+                        .col-3.d-flex
+                            .task.task_2
+                                .task__title Расходные материалы
+                        .col-3.d-flex
+                            .task.task_3
+                                .task__title Периферийное оборудование
+                        .col-3.d-flex
+                            .task.task_4
+                                .task__title Компьютеры
+                        .col-3.d-flex
+                            .task.task_5
+                                .task__title Конференц-связь
+                        .col-3.d-flex
+                            .task.task_6
+                                .task__title Сетевое оборудование
+                        .col-3.d-flex
+                            .task.task_7
+                                .task__title Системы безопасности
+                        .col-3.d-flex
+                            .task.task_8
+                                .task__title Торговое оборудование
+            aside.news
+                .container
+                    .row
+                        .col-4
+                            a.news-preview(href="/text.html")
+                                p.news-preview__title Внедрили новое решение в компанию  «Название компании»
+                                p.mb-0.news-preview__intro Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.
+                        .col-4
+                            a.news-preview(href="/text.html")
+                                p.news-preview__title Внедрили новое решение в компанию  «Название компании»
+                                p.mb-0.news-preview__intro Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.
+                        .col-4
+                            a.news-preview(href="/text.html")
+                                p.news-preview__title Внедрили новое решение в компанию  «Название компании»
+                                p.mb-0.news-preview__intro Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.
+            section.block-contact
+                .container
+                    .row.align-items-center
+                        .col-3
+                            p.text-uppercase.text-bold Адрес
+                            p г. Москва, улица Правды дом 24
+                            p.text-uppercase.text-bold КАК СВЯЗАТЬСЯ
+                            p.mb-0 Телефон: 
+                                a.link-inverse(href="tel:+7(495) 792-81-27") +7(495) 792-81-27
+                            p E-mail: 
+                                a.link-inverse(href="mailto:info@inkam.org.ru") info@inkam.org.ru
+                            p.text-uppercase.text-bold ВРЕМЯ РАБОТЫ
+                            p ПН-ПТ с 9.00 до 18.00
+                            p.mb-0.mt-30
+                                a.btn.btn_action(data-fancybox="modal" data-src="#modalCall" href="javascript:;") Остались вопросы?
+                        .col-9
+                            .map
+                                <iframe src="https://yandex.ru/map-widget/v1/-/CGcyf0YI" width="100%" height="380" frameborder="0" allowfullscreen="false"></iframe>
         include chunks/footer.pug
+        script(src="./js/jquery.min.js")
         script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/jquery.fancybox.min.js")
         script(src="./js/app.min.js")

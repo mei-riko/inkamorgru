@@ -1,0 +1,43 @@
+.slider{
+    .slick-arrow{
+        width: 44px;
+        height: 44px;
+        z-index: 11;
+        border: 1px solid $light-grey;
+        padding: 8px;
+
+        &.slick-prev{
+            left: auto;
+            right: 43px;
+            border-radius: 30px 0 0 30px;
+            background: url("../img/back.svg") no-repeat center / 20px;
+            &:before{
+                content:'';
+            }
+        }
+        &.slick-next{
+            left: auto;
+            right: 0px;
+            border-radius: 0 30px 30px 0;
+            background: url("../img/next.svg") no-repeat center / 20px;
+            &:before{
+                content:'';
+            }
+        }
+    }
+    &_logo{
+        padding-right: 120px;
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
+        .slick-arrow{
+            bottom: 0;
+            top: auto;
+        }
+
+        .slider__item{
+            padding: 0 20px;
+        }
+    }
+}

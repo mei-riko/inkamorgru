@@ -1,0 +1,29 @@
+.task{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 30px 20px;
+    .task__title{
+        position: relative;
+
+        color: $dark-blue;
+        line-height: 20px; 
+
+        padding-left: 40px;
+
+        &:before{
+            position: absolute;
+            left: 0;
+            top: calc(50% - 10px);
+
+            display: block;
+            content: '';
+
+            width: 20px;
+            height: 20px;
+
+            background: url("../img/plus-gradient.svg") no-repeat center / contain;
+        }
+    }
+}

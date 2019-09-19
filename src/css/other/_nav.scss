@@ -1,0 +1,17 @@
+.navbar-toggle{
+    display: none;
+}
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    .navbar__item{
+        padding: 20px;
+    }
+    .navbar__link{
+        white-space: nowrap;
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+    }
+}

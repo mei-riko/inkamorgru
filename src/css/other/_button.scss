@@ -1,0 +1,41 @@
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+
+    padding: 13px 32px 12px;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &_action{
+        color: $white;
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+
+        &:after{
+            display: block;
+            content: '';
+            width: calc(100% + 100px);
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            transform: translateX(-80px);
+
+            background:  linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
+            transition: .5s;
+        }
+        &:hover{
+            color: $white;
+            &:after{
+                transform: translateX(0px);
+            }
+        }
+    }
+}

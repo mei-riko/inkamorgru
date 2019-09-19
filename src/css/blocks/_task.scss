@@ -1,0 +1,33 @@
+.block-task{
+    padding: 90px 0;
+    .block-task__title{
+        margin-bottom: 40px;
+    }
+
+    .task{
+        &_1{
+            border-right: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+        }
+        &_2{
+            border-right: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+        }
+        &_3{
+            border-right: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+        }
+        &_4{
+            border-bottom: 1px solid $light-grey;
+        }
+        &_5{
+            border-right: 1px solid $light-grey;
+        }
+        &_6{
+            border-right: 1px solid $light-grey;
+        }
+        &_7{
+            border-right: 1px solid $light-grey;
+        }
+    }
+}

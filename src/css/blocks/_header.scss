@@ -1,0 +1,36 @@
+.block-header{
+    padding: 90px 0;
+    background: $bg-light url("../img/bg-index.png") no-repeat right center / contain;;
+
+    .header-block__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+
+        width: 800px;
+        max-width: 100%;
+
+        & + .header-block__offer{
+            margin-top: 30px;
+        }
+    }
+    .header-block__offer{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .advantage{
+        margin-left: -10px;
+        margin-right: -10px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .advantage__item{
+            flex: 0 0 240px;
+            max-width: 240px;
+            margin: 10px;
+        }
+    }
+}

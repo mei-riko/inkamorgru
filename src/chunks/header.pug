@@ -1,0 +1,29 @@
+header.header
+    .container
+        .header__row.row.no-gutters.align-items-center.justify-content-between
+            .header__col
+                a.header__logo(href="/" title="Компания ИНКАМ системный интегратор")
+            .header__col
+                svg.navbar-toggle#nav(viewBox="0 0 24.00 24.00" xml:space="preserve")
+                        path(fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z")
+                nav.navbar
+                    .navbar__item
+                        a.navbar__link(href="#") Услуги
+                    .navbar__item
+                        a.navbar__link(href="#") Продукты
+                    .navbar__item
+                        a.navbar__link(href="#") Проекты
+                    .navbar__item
+                        a.navbar__link(href="#") О компании
+                    .navbar__item
+                        a.navbar__link(href="#") Контакты
+            .header__col
+                form.form.form_search(action="")
+                    input.input.input_search(placeholder="Поиск по сайту" type="search")
+                    input.btn(type="submit")
+            .header__col
+                ul.contacts
+                    li.contacts__item
+                        a.contacts__link.contacts__link_email(href="mailto:info@inkam.org.ru") info@inkam.org.ru
+                    li.contacts__item
+                        a.contacts__link.contacts__link_phone(href="tel:+7(495) 792-81-27") +7(495) 792-81-27

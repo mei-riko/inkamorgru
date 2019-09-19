@@ -1,0 +1,33 @@
+.form{
+    margin: 0;
+    padding: 0;
+    // Search Form
+    &_search{
+        position: relative;
+        width: 200px;
+        max-width: 100%;
+        .input_search{
+            padding-left: 46px;
+        }
+        .btn{
+            font-size: 0;
+            width: 24px;
+            height: 24px;
+            background: url("../img/magnify.svg") no-repeat center / contain;
+
+            position: absolute;
+            left: 16px;
+            top: calc(50% - 12px);
+        }
+    }
+}
+
+.input{
+    border: 1px solid $light-grey;
+    outline: none;
+    padding: 14px 18px;
+
+    border-radius: 30px;
+
+    max-width: 100%;
+}
