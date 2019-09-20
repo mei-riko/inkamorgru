@@ -1,4 +1,10 @@
 .slider{
+    .slider__item{
+        outline: none;
+        &:hover, &:focus{
+            outline: none;
+        }
+    }
     .slick-arrow{
         width: 44px;
         height: 44px;

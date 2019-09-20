@@ -1,0 +1,96 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Company Page
+        link(href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        link(href='./css/style.css', rel='stylesheet')
+    body
+        include chunks/header.pug
+        main
+            section.bg-gradient.title
+                .container
+                    .row.justify-content-between.align-items-center
+                        .col-6
+                            h1.heading Системный интегратор
+                        .col-5 
+                            p.subheading.subheading_light О КОМПАНИИ «ИНКАМ»
+                            .subheading-line.subheading-line_light
+                            p Мультивендорный системный интегратор созданный профессионалами с многолетним опытом в области коммуникаций и информационных технологий. Компания является надежным поставщиком высокотехнологичных и инновационных IT-решений для вашего бизнеса.  
+            section.block-partners
+                .container
+                    .row.align-items-center
+                        .col-3
+                            p.heading Нам доверяют:
+                        .col-9
+                            .slider.slider_logo
+                                .slider__item
+                                    img.img-fluid(src="../img/RT_full_logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/transmash_logo.png")
+                                .slider__item
+                                    img.img-fluid(src="../img/rzd.jpg")
+            section.content.content_offset
+                .container
+                    .row.align-items-center
+                        .col-5
+                            p.h3.mb-40 С нами работают крупнейшие компании по всей России
+                            p ИНКАМ на рынке с 2013 года, и результат нашей работы — это разработка и внедрение более 100 IT-решений и технологий на предприятия, работающие по всей России. 
+                        .col-7
+                            img.img-fluid(src="../img/maps-russia.svg")
+            section.block-service.bg-light
+                .container
+                    p.heading.mb-40 ИНКАМ сегодня  — это
+                    .row
+                        .col-6.d-flex
+                            .block-service__block
+                                p.h6.text-bold.text-blue Квалифицированные технические специалисты
+                                p От монтажников до проектировщиков - весь персонал имеет необходимый опыт и уровень компетенций и несут ответственность за каждый этап работы: от создания проектной документации до сдачи проекта “под ключ”. Являясь авторизированными партнерами ведущих вендоров, мы имеем в своем штате инженеров, прошедших многоступенчатое обучение и предоставляющих квалифицированные сервисные услуги: от ввода техники до составление индивидуального контракта на обслуживание (SLA).
+                        .col-6.d-flex
+                            .block-service__block
+                                p.h6.text-bold.text-blue Работа с любой компанией в любом городе России
+                                p Нам важен каждый заказчик! Предоставляем услуги для крупных, средних и небольших компаний. Работаем по всей России вне зависимости от региона и предоставляем услуги по моделированию, поставки оборудования и интеграции высокотехнологичных решений. 
+                        .col-6.d-flex.mt-40
+                            .block-service__block
+                                p.h6.text-bold.text-blue Высокая скорость обработки запросов
+                                p Оперативная обработка потребностей заказчика и выдача предложений, позволит разработать решение даже в короткие сроки. После завершения проекта осуществляем техническую поддержку 24/7: мы всегда остаемся “на связи” и готовы помочь вам в решении технических вопросов и устранения любых неполадок. 
+                        .col-6.d-flex.mt-40
+                            .block-service__block
+                                p.h6.text-bold.text-blue Решения под потребности заказчика
+                                p С 2013 года моделируем и разрабатываем решения в соответствии с потребностями заказчика. Опыт позволяет проводить объективный анализ инфраструктур и разрабатывать работающие рекомендации. 
+            section.content.content_offset
+                .container
+                    .row.align-items-center.justify-content-between
+                        .col-5
+                            p.h3.mb-40 Сотрудничаем с ведущими мировыми вендорами
+                            p Качество продукции проверено годами и является эталоном качественных технологий, позволяет гарантировать высокое качество всего поставляемого оборудования. Средние сроки поставки составляют 4-8 недель.
+                        .col-6
+                            .row.align-items-center
+                                .col-3.text-center.mb-20
+                                    img.img-fluid(src="../img/image-1.jpg")
+                                .col-3.text-center.mb-20
+                                    img.img-fluid(src="../img/image-6.jpg")
+                                .col-3.text-center.mb-20
+                                    img.img-fluid(src="../img/image-4.jpg")
+                                .col-3.text-center.mb-20
+                                    img.img-fluid(src="../img/image-6.jpg")
+                                .col-3.text-center
+                                    img.img-fluid(src="../img/image-7.jpg")
+                                .col-3.text-center
+                                    img.img-fluid(src="../img/image-3.jpg")
+                                .col-3.text-center
+                                    img.img-fluid(src="../img/image-5.jpg")
+                                .col-3.text-center
+                                    img.img-fluid(src="../img/image-3.jpg")
+        include chunks/footer.pug
+        script(src="./js/jquery.min.js")
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/slick.min.js")
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/app.min.js")

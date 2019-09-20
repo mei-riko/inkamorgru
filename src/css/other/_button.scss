@@ -3,7 +3,10 @@
     border: none;
     outline: none;
 
+    border-radius: 30px;
     padding: 13px 32px 12px;
+
+    transition: .4s;
 
     &:hover{
         text-decoration: none;
@@ -12,7 +15,6 @@
     &_action{
         color: $white;
         position: relative;
-        border-radius: 30px;
         overflow: hidden;
 
         &:after{
@@ -37,5 +39,17 @@
                 transform: translateX(0px);
             }
         }
+    }
+
+    &_default{
+        color: $white;
+        background: #22BBC4;
+        &:hover{
+            background: darken($color: #22BBC4, $amount: 5%);
+        }
+    }
+
+    &_full-width{
+        width: 100%;
     }
 }

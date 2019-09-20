@@ -4,13 +4,14 @@
     // Search Form
     &_search{
         position: relative;
-        width: 200px;
         max-width: 100%;
         .input_search{
             padding-left: 46px;
         }
         .btn{
             font-size: 0;
+            padding: 0!important;
+            margin: 0!important;
             width: 24px;
             height: 24px;
             background: url("../img/magnify.svg") no-repeat center / contain;
@@ -29,5 +30,13 @@
 
     border-radius: 30px;
 
+    width: 100%;
     max-width: 100%;
+
+    & + *{
+        margin-top: 1rem;
+    }
+    & + .btn{
+        margin-top: 1.5rem;
+    }
 }

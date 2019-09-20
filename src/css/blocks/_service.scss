@@ -1,3 +1,8 @@
 .block-service{
     padding: 90px 0;
+    .block-service__block{
+        padding: 40px;
+        background: $white;
+        border: 1px solid $light-grey;
+    }
 }

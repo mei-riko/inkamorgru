@@ -7,7 +7,6 @@
 
     text-transform: uppercase;
 }
-
 .subheading{
     font-weight: bold;
     font-size: 1rem;
@@ -21,5 +20,66 @@
         margin-left: 0;
         margin-bottom: 1.25rem;
         background: $dark-blue;
+        &_light{
+            background: $light-grey;
+        }
+    }
+
+    &_light{
+        color: $light-grey;
+    }
+}
+// For 404 Page
+.error{
+    padding: 90px 0;
+    .error__title{
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 74px;
+    }
+    .error__offer{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .line{
+        margin: 40px auto;
+        width: 200px;
+        height: 1px;
+        background: $grey;
+    }
+    .form_search{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+// Default Padding
+.content{
+    padding: 60px 0;
+    .content__title{
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+    .content__contact{
+        position: relative;
+        padding-left: calc(100% - 300px);
+        max-width: 100%;
+        margin-left: auto;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: calc((100% - 340px)/2);
+            width: 1px;
+            height: 100%;
+            background: $light-grey;
+
+        }
+    }
+
+    &_offset{
+        padding: 90px 0;
     }
 }

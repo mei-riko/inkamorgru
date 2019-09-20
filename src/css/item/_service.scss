@@ -1,14 +1,26 @@
 .service{
     background: $white;
     border: 1px solid $light-grey;
-    padding: 70px 40px;
-
-    text-align: center;
 
     width: 100%;
+    .service__img{
+        height: 60px;
+        width: auto;
+        margin: 0 auto 1rem;
+    }
+    .service__company{
+        @extend .text-small;
+        color: $grey;
+    }
+    .service__location{
+        @extend .text-small;
+    }
 
     &_modal-btn{
         position: relative;
+
+        padding: 70px 40px;
+        text-align: center;
 
         display: flex;
         align-items: center;
@@ -50,5 +62,19 @@
     }
     &_bt-hide{
         border-top: none;
+    }
+    &_bb-hide{
+        border-bottom: none;
+    }
+
+    &_project{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    &_highlight{
+        flex-direction: row;
+        align-items: center;
+        padding: 70px 40px;
     }
 }
