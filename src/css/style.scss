@@ -11,6 +11,7 @@
 @import "other/form.scss";
 @import "other/button.scss";
 @import "other/pagination.scss";
+@import "other/modal.scss";
 @import "other/footer.scss";
 
 @import "item/advantage.scss";
@@ -18,7 +19,6 @@
 @import "item/task.scss";
 @import "item/slider.scss";
 
-@import "blocks/content.scss";
 @import "blocks/header.scss";
 @import "blocks/partners.scss";
 @import "blocks/service.scss";
@@ -28,3 +28,5 @@
 
 @import "section/title.scss";
 @import "section/news.scss";
+@import "section/content.scss";
+@import "section/product.scss";

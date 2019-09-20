@@ -113,7 +113,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         }
     });
 
-    // Slider
+    // Slider/
     if ((0, _jquery2.default)('.slider_logo').length > 0) {
         var $slickElementLogo = (0, _jquery2.default)('.slider.slider_logo');
         $slickElementLogo.slick({
@@ -131,6 +131,45 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             }]
         });
     }
+    if ((0, _jquery2.default)('.slider_review').length > 0) {
+        var $slickElementReview = (0, _jquery2.default)('.slider.slider_review');
+        $slickElementReview.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            infinite: true
+        });
+    }
+    if ((0, _jquery2.default)('.slider_catalog').length > 0) {
+        var $slickElementCatalog = (0, _jquery2.default)('.slider.slider_catalog');
+        $slickElementCatalog.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            infinite: true
+        });
+    }
+
+    // Task Tabs
+    (0, _jquery2.default)(".task.task_tab").on("click", function () {
+
+        if ((0, _jquery2.default)(this).hasClass("task--active")) {
+            (0, _jquery2.default)(this).removeClass("task--active");
+            (0, _jquery2.default)(this).find(".task__tab-content").slideUp();
+        } else {
+            if ((0, _jquery2.default)(".task.task_tab").hasClass("task--active")) {
+                (0, _jquery2.default)(".task.task_tab.task--active .task__tab-content").slideUp();
+                (0, _jquery2.default)(".task.task_tab.task--active").removeClass("task--active");
+            }
+            (0, _jquery2.default)(this).addClass("task--active");
+            (0, _jquery2.default)(this).find(".task__tab-content").slideDown();
+        }
+    });
 });
 
 /***/ }),

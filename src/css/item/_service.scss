@@ -15,7 +15,51 @@
     .service__location{
         @extend .text-small;
     }
+    &_content-hover{
+        position: relative;
 
+        padding: 70px 40px;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        text-align: center;
+
+        .service__title{
+            color: $dark-blue;
+            transition: .4s;
+        }
+        .service__content{
+            position: absolute;
+            background: $bg-light;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            opacity: 0;
+
+            transition: .4s;
+        }
+
+        &:hover{
+            .service__title{
+                opacity: 0;
+            }
+            .service__content{
+                opacity: 1;
+            }
+        }
+    }
+    // Example on Index Page
     &_modal-btn{
         position: relative;
 
@@ -39,14 +83,13 @@
             display: block;
             width: 100%;
             height: 100%;
-            background:  linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
+            background: linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
 
             opacity: 0;
 
             z-index: 1;
             transition: .3s;
         }
-
         &:hover, &:focus{
             .service__title{
                 color: $white;
@@ -56,7 +99,7 @@
             }
         }
     }
-
+    // Border Block
     &_bl-hide{
         border-left: none;
     }
@@ -66,7 +109,7 @@
     &_bb-hide{
         border-bottom: none;
     }
-
+    // For Portfolio Page
     &_project{
         display: flex;
         flex-direction: column;

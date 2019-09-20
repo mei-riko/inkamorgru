@@ -21,6 +21,13 @@
             top: calc(50% - 12px);
         }
     }
+    // Filter
+    &_filter{
+        .select{
+            margin-right: 15px;
+            color: darken($color: $grey, $amount: 10%);
+        }
+    }
 }
 
 .input{
@@ -39,4 +46,19 @@
     & + .btn{
         margin-top: 1.5rem;
     }
+}
+
+.select{
+    border: 1px solid $light-grey;
+    outline: none;
+    padding: 8px 20px;
+    padding-right: 40px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
+
+    background: url("../img/arrow-down.svg") no-repeat right center / 12px;
+    background-position-x: calc(100% - 10px);
 }

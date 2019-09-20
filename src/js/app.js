@@ -36,7 +36,7 @@ $(document).ready(() =>{
           }
       });
   
-      // Slider
+      // Slider/
       if( $('.slider_logo').length > 0 ){
         let $slickElementLogo = $('.slider.slider_logo');
         $slickElementLogo.slick({
@@ -56,5 +56,44 @@ $(document).ready(() =>{
             ]
         });
       }
+      if( $('.slider_review').length > 0 ){
+        let $slickElementReview = $('.slider.slider_review');
+        $slickElementReview.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            infinite: true
+        });
+      }
+      if( $('.slider_catalog').length > 0 ){
+        let $slickElementCatalog = $('.slider.slider_catalog');
+        $slickElementCatalog.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            infinite: true
+        });
+      }
 
+      // Task Tabs
+      $(".task.task_tab").on("click", function() {
+
+        if( $(this).hasClass("task--active") ){
+          $(this).removeClass("task--active");
+          $(this).find(".task__tab-content").slideUp();
+        }else{
+          if( $(".task.task_tab").hasClass("task--active") ){
+            $(".task.task_tab.task--active .task__tab-content").slideUp();
+            $(".task.task_tab.task--active").removeClass("task--active");
+          }
+          $(this).addClass("task--active");
+          $(this).find(".task__tab-content").slideDown();
+        }
+        
+      });
 });

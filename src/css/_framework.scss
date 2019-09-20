@@ -39,6 +39,7 @@ p {
     }
 }
 ol, ul{
+    font-size: 1rem;
     padding: 0;
     margin-bottom: 1.25rem;
     padding-left: 1.25rem;
@@ -66,13 +67,14 @@ a{
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101; background: $white;}
 
-.d-flex{display: flex;}
+.d-flex{display: flex; flex-direction: row; flex-wrap: wrap;}
 .d-none{display: none;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
 .text-grey{color: $grey;}
 .text-blue{color: $blue;}
+.text-dark-blue{color: $dark-blue;}
 
 .text-nowrap{white-space: nowrap;}
 

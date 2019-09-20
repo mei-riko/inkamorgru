@@ -5,4 +5,46 @@
         background: $white;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
+
+    &_with-icon{
+        .advantage__item{
+            position: relative;
+            width: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            padding-left: 100px;
+
+            height: 75px;
+
+            &:after{
+                display: block;
+                content: '';
+
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+
+                width: 75px;
+                height: 100%;
+
+                background: linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
+            }
+        }
+        .advantage__icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            &.position-1{top:20px;left:25px;}
+            &.position-2{top:22px;left:27px;}
+            &.position-3{top:27px;left:24px;}
+            &.position-4{top:24px;left:22px;}
+            &.position-5{top:24px;left:24px;}
+            &.position-6{top:24px;left:24px;}
+        }
+    }
 }

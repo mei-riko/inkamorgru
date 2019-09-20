@@ -1,0 +1,17 @@
+.modal{
+    width: 600px;
+    max-width: 100%;
+    padding: 0;
+
+    .modal__title{
+        padding: 20px 40px;
+        background: linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
+        color: $white;
+    }
+    .modal__content{
+        padding: 20px 40px 30px;
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

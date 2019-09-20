@@ -6,6 +6,11 @@
     color: $grey;
 
     text-transform: uppercase;
+
+    &_small{
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 .subheading{
     font-weight: bold;
@@ -22,6 +27,9 @@
         background: $dark-blue;
         &_light{
             background: $light-grey;
+        }
+        &_sidebar{
+            margin: 24px 0 26px;
         }
     }
 
@@ -78,8 +86,28 @@
 
         }
     }
+    .content__label{
+        display: inline-block;
+        padding: 6px 10px;
+        
+        background: $blue;
+        color: $white;
 
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1;
+
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+    .content__offer{
+        color: $dark-blue;
+    }
     &_offset{
         padding: 90px 0;
+    }
+
+    & + .content{
+        padding-top: 0;
     }
 }

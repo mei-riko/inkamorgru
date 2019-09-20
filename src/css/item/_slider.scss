@@ -5,6 +5,9 @@
             outline: none;
         }
     }
+    .slick-slide{
+        height: auto;
+    }
     .slick-arrow{
         width: 44px;
         height: 44px;
@@ -13,19 +16,16 @@
         padding: 8px;
 
         &.slick-prev{
-            left: auto;
-            right: 43px;
             border-radius: 30px 0 0 30px;
-            background: url("../img/back.svg") no-repeat center / 20px;
+            background: $white url("../img/back.svg") no-repeat center / 20px;
             &:before{
                 content:'';
+                display: none;
             }
         }
         &.slick-next{
-            left: auto;
-            right: 0px;
             border-radius: 0 30px 30px 0;
-            background: url("../img/next.svg") no-repeat center / 20px;
+            background: $white  url("../img/next.svg") no-repeat center / 20px;
             &:before{
                 content:'';
             }
@@ -40,10 +40,56 @@
         .slick-arrow{
             bottom: 0;
             top: auto;
+            &.slick-prev{
+                left: auto;
+                right: 43px;
+            }
+            &.slick-next{
+                left: auto;
+                right: 0px;
+            }
         }
 
         .slider__item{
             padding: 0 20px;
+        }
+    }
+    &_review{
+        padding-bottom: 74px;
+        .slick-arrow{
+            bottom: -22px;
+            top: auto;
+            &.slick-prev{
+                left: 0;
+                right: auto;
+            }
+            &.slick-next{
+                left: 43px;
+                right: auto;
+            }
+        }
+    }
+    &_catalog{
+        border: 1px solid $light-grey;
+        background: $bg-light;
+        padding: 40px;
+
+        .content__title{
+            width: 700px;
+            max-width: 100%;
+        }
+
+        .slick-arrow{
+            bottom: 0;
+            top: auto;
+            &.slick-prev{
+                left: auto;
+                right: 65px;
+            }
+            &.slick-next{
+                left: auto;
+                right: 22px;
+            }
         }
     }
 }
