@@ -1,4 +1,6 @@
 .modal{
+    display: none;
+    
     width: 600px;
     max-width: 100%;
     padding: 0;
@@ -10,8 +12,30 @@
     }
     .modal__content{
         padding: 20px 40px 30px;
+        ul:last-child,
+        ol:last-child,
         p:last-child{
             margin-bottom: 0;
         }
+    }
+    
+    &_form{
+        width: 440px;
+        .modal__content{
+            background: linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
+            padding: 40px;
+            .form{
+                .form__agree{
+                    color: $light-grey;
+                    .checkbox__link{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .fancybox-button{
+        color: $white;
     }
 }

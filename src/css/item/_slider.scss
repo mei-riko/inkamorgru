@@ -32,13 +32,13 @@
         }
     }
     &_logo{
-        padding-right: 120px;
+        padding-right: 100px;
         .slick-track{
             display: flex;
             align-items: center;
         }
         .slick-arrow{
-            bottom: 0;
+            bottom: -22px;
             top: auto;
             &.slick-prev{
                 left: auto;

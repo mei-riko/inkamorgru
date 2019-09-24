@@ -54,3 +54,19 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .task{
+        padding: 30px 10px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .task{
+        padding: 30px 20px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .task{
+        padding: 10px 20px;
+        padding-left: 0;
+    }
+}

@@ -1,3 +1,8 @@
 .block-contact{
     padding: 90px 0;
 }
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .block-contact{
+        padding: 40px 0;
+    }
+}

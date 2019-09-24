@@ -15,11 +15,12 @@
     <header class="header">
       <div class="container">
         <div class="header__row row no-gutters align-items-center justify-content-between">
-          <div class="header__col"><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a></div>
-          <div class="header__col">
+          <div class="header__col header__col_nav">
             <svg class="navbar-toggle" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
               <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-            </svg>
+            </svg><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a>
+          </div>
+          <div class="header__col">
             <nav class="navbar">
               <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
               <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
@@ -43,13 +44,26 @@
         </div>
       </div>
     </header>
+    <div class="navbar-mobile" id="navMobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Проекты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О компании</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Контакты</a></div>
+      </nav>
+      <form class="form form_search" action="">
+        <input class="input input_search" placeholder="Поиск по сайту" type="search"/>
+        <input class="btn" type="submit"/>
+      </form>
+    </div>
     <main>
       <section class="block-header">
         <div class="container">
           <h1 class="header-block__title">Разработка и внедрение <span class="text-blue text-nowrap">IT-решений </span>любой сложности</h1>
           <p class="header-block__offer">Более 50 компаний выбрали ИНКАМ за неоспоримые преимущества:</p>
           <div class="row">
-            <div class="col-9">
+            <div class="col-9 col-md-12">
               <div class="advantage">
                 <div class="advantage__item">Решения под потребности заказчика</div>
                 <div class="advantage__item">Техническая поддержка 24/7 проекта</div>
@@ -65,10 +79,10 @@
       <section class="block-partners">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-3">
+            <div class="col-3 col-sm-12 mb-sm-20 col-md-5 col-lg-4">
               <p class="heading">Нам доверяют:</p>
             </div>
-            <div class="col-9">
+            <div class="col-9 col-sm-12 col-md-7 col-lg-8">
               <div class="slider slider_logo">
                 <div class="slider__item"><img class="img-fluid" src="../img/RT_full_logo.png"/></div>
                 <div class="slider__item"><img class="img-fluid" src="../img/logo.png"/></div>
@@ -82,45 +96,45 @@
       <section class="block-service">
         <div class="container">
           <div class="row no-gutters">
-            <div class="col-4">
-              <p class="h2">Компетенции компании</p>
+            <div class="col-4 col-sm-12 col-md-12">
+              <p class="block-service__title h2 mb-md-40">Компетенции компании</p>
             </div>
-            <div class="col-4 d-flex">
-              <div class="service service_modal-btn">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
+              <div class="service service_modal-btn service_first-child">
                 <div class="service__title">Сетевая инфраструктура</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bl-hide">
                 <div class="service__title">Унифицированные коммуникации</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn">
                 <div class="service__title">IT-решения</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bl-hide service_bt-hide">
                 <div class="service__title">Комплексные системы мониторинга и&nbsp;анализа</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bl-hide service_bt-hide">
                 <div class="service__title">Проектирование и модернизация <span class="text-nowrap">IT-инфраструктуры</span></div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bt-hide">
                 <div class="service__title">Управление комплексными проектами</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bl-hide service_bt-hide">
                 <div class="service__title">Сервисная поддержка</div>
               </div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 col-sm-12 col-md-6 d-flex">
               <div class="service service_modal-btn service_bl-hide service_bt-hide">
                 <div class="service__title">Проектирование и&nbsp;модернизация инженерной инфраструктуры ЦОД</div>
                 <div class="service__content"></div>
@@ -132,7 +146,7 @@
       <section class="block-content">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-5">
+            <div class="col-5 col-md-12 col-lg-9">
               <p class="subheading">ИНКАМ СЕГОДНЯ</p>
               <div class="subheading-line"></div>
               <p>
@@ -144,54 +158,54 @@
                 реализованные как для&nbsp;российских, так и&nbsp;для&nbsp;международых компаний. 
               </p>
             </div>
-            <div class="col-7"><img class="img-fluid" src="../img/maps-russia.svg"/></div>
+            <div class="col-7 col-md-12 mt-sm-20 col-lg-12"><img class="img-fluid" src="../img/maps-russia.svg"/></div>
           </div>
         </div>
       </section>
       <section class="block-task">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 col-sm-12 col-md-12 col-lg-8 col-xl-5">
               <p class="h3 block-task__title">Поставка оборудования для&nbsp;любых задач</p>
             </div>
           </div>
           <div class="row no-gutters">
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_1">
                 <div class="task__title">Хранение данных</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_2">
                 <div class="task__title">Расходные материалы</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_3">
                 <div class="task__title">Периферийное оборудование</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_4">
                 <div class="task__title">Компьютеры</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_5">
                 <div class="task__title">Конференц-связь</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_6">
                 <div class="task__title">Сетевое оборудование</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_7">
                 <div class="task__title">Системы безопасности</div>
               </div>
             </div>
-            <div class="col-3 d-flex">
+            <div class="col-3 col-sm-12 col-md-6 d-flex">
               <div class="task task_8">
                 <div class="task__title">Торговое оборудование</div>
               </div>
@@ -202,13 +216,13 @@
       <aside class="news">
         <div class="container">
           <div class="row">
-            <div class="col-4"><a class="news-preview" href="/text.html">
+            <div class="col-4 col-sm-12 col-md-6"><a class="news-preview" href="/text.html">
                 <p class="news-preview__title">Внедрили новое решение в компанию  «Название компании»</p>
                 <p class="mb-0 news-preview__intro">Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.</p></a></div>
-            <div class="col-4"><a class="news-preview" href="/text.html">
+            <div class="col-4 col-sm-12 mt-sm-40 col-md-6"><a class="news-preview" href="/text.html">
                 <p class="news-preview__title">Внедрили новое решение в компанию  «Название компании»</p>
                 <p class="mb-0 news-preview__intro">Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.</p></a></div>
-            <div class="col-4"><a class="news-preview" href="/text.html">
+            <div class="col-4 col-sm-12 col-md-12 mt-md-40"><a class="news-preview" href="/text.html">
                 <p class="news-preview__title">Внедрили новое решение в компанию  «Название компании»</p>
                 <p class="mb-0 news-preview__intro">Lorem ipsum dolor sit amet. Accusamus et expedita distinctio deleniti atque. Qui in ea commodi autem. Sunt, explicabo et dolorum fuga cum soluta nobis.</p></a></div>
           </div>
@@ -217,17 +231,27 @@
       <section class="block-contact">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-3">
-              <p class="text-uppercase text-bold">Адрес</p>
-              <p>г. Москва, улица Правды дом 24</p>
-              <p class="text-uppercase text-bold">КАК СВЯЗАТЬСЯ</p>
-              <p class="mb-0">Телефон: <a class="link-inverse" href="tel:+7(495) 792-81-27">+7(495) 792-81-27</a></p>
-              <p>E-mail: <a class="link-inverse" href="mailto:info@inkam.org.ru">info@inkam.org.ru</a></p>
-              <p class="text-uppercase text-bold">ВРЕМЯ РАБОТЫ</p>
-              <p>ПН-ПТ с 9.00 до 18.00</p>
-              <p class="mb-0 mt-40"><a class="btn btn_action" data-fancybox="modal" data-src="#modalCall" href="javascript:;">Остались вопросы?</a></p>
+            <div class="col-3 col-sm-12 col-lg-12 col-xl-4">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6">
+                  <p class="text-uppercase text-bold">Адрес</p>
+                  <p>г. Москва, улица Правды дом 24</p>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6">
+                  <p class="text-uppercase text-bold">КАК СВЯЗАТЬСЯ</p>
+                  <p class="mb-0">Телефон: <a class="link-inverse" href="tel:+7(495) 792-81-27">+7(495) 792-81-27</a></p>
+                  <p>E-mail: <a class="link-inverse" href="mailto:info@inkam.org.ru">info@inkam.org.ru</a></p>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6">
+                  <p class="text-uppercase text-bold">ВРЕМЯ РАБОТЫ</p>
+                  <p>ПН-ПТ с 9.00 до 18.00</p>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6">
+                  <p class="mb-0 mt-40 mt-lg-20"><a class="btn btn_action" data-fancybox="modal" data-src="#modalCall" href="javascript:;">Остались вопросы?</a></p>
+                </div>
+              </div>
             </div>
-            <div class="col-9">
+            <div class="col-9 col-sm-12 mt-lg-40 col-lg-12 col-xl-8">
               <div class="map"><iframe src="https://yandex.ru/map-widget/v1/-/CGcyf0YI" width="100%" height="380" frameborder="0" allowfullscreen="false"></iframe></div>
             </div>
           </div>
@@ -259,11 +283,24 @@
     <div class="footer-info">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-sm-12 text-sm-center">
             <p class="mb-0 text-small">© 2019. Все права защищены</p>
           </div>
-          <div class="col-6 text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
+          <div class="col-6 col-sm-12 text-sm-center text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
         </div>
+      </div>
+    </div>
+    <div class="modal modal_form" id="modalCall">
+      <div class="modal__content"> 
+        <form class="form" action="">
+          <input class="input" type="text" placeholder="Ваше имя"/>
+          <input class="input phone" type="number" placeholder="Телефон"/>
+          <input class="btn btn_default btn_full-width text-bold" type="submit" value="Нужна консультация"/>
+          <div class="form__agree checkbox">
+            <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+            <label class="checkbox__label" for="agree">согласен с <a class="checkbox__link" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/jquery.min.js"></script>

@@ -6,3 +6,18 @@
         border: 1px solid $light-grey;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .block-service{
+        .block-service__title{
+            font-size: 2rem;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .block-service{
+        padding: 60px 0;
+        .block-service__title{
+            font-size: 2.5rem;
+        }
+    }
+}

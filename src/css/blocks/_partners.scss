@@ -6,3 +6,9 @@
         margin: 0;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .block-partners{
+        padding: 20px 0;
+    }
+}

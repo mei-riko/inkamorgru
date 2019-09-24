@@ -57,3 +57,62 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .header{
+        .header__col{
+            .form_search{
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header{
+        .header__logo {
+            width: 110px;
+            height: 90px;
+        }
+        .header__col{
+            &_nav{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+            .navbar{
+                display: none;
+            }
+            .form_search{
+                display: block;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .header{
+        .header__logo {
+            width: 86px;
+            height: 72px;
+        }
+        .header__col{
+            .form_search{
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header{
+        .header__logo{
+            width: 72px;
+            height: 60px;
+        }
+    }
+    .contacts{
+        .contacts__link{
+            &_phone{
+                font-size: 18px;
+            }
+        }
+    }
+}

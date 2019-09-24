@@ -1,5 +1,7 @@
 .navbar-toggle{
     display: none;
+    width: 30px;
+    height: 30px;
 }
 .navbar{
     display: flex;
@@ -13,5 +15,24 @@
         &:hover, &:focus{
             text-decoration: none;
         }
+    }
+}
+.navbar-mobile{
+    display: none;
+    padding: 20px 20px 40px;
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 12px 0 32px;
+        .navbar__item{
+            width: 100%;
+            padding: 8px 0px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .navbar-toggle{
+        display: block;
+        margin-right: 20px;
     }
 }

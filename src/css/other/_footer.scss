@@ -40,3 +40,59 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .footer{
+        .contacts{
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .footer{
+        .navbar{
+            flex-wrap: wrap;
+            justify-content: center;
+            .navbar__item{
+                padding: 6px 10px;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .footer{
+        padding: 30px 0;
+        .footer__row{
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .navbar{
+            padding: 18px 0;
+            .navbar__item {
+                padding: 12px;
+            }
+        }
+        .contacts{
+            justify-content: center;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .footer{
+        .navbar{
+            flex-wrap: wrap;
+            padding: 20px 0;
+
+            .navbar__item {
+                padding: 18px 10px;
+                width: 100%;
+                text-align: center;
+
+                & + .navbar__item {
+                    border-top: 1px solid $dark-blue;
+                }
+            }
+        }
+    }
+}

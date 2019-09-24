@@ -1,6 +1,6 @@
 .block-header{
     padding: 90px 0;
-    background: $bg-light url("../img/bg-index.png") no-repeat right center / contain;;
+    background: $bg-light url("../img/bg-index.png") no-repeat right center / cover;
 
     .header-block__title{
         font-weight: 700;
@@ -29,8 +29,56 @@
 
         .advantage__item{
             flex: 0 0 240px;
-            max-width: 240px;
+            max-width: calc(50% - 20px);
             margin: 10px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .block-header{
+        background: $bg-light url("../img/bg-index.png") no-repeat left center / cover;
+        padding: 60px 0;
+        .header-block__title {
+            font-size: 38px;
+            line-height: 48px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .block-header{
+        background: $bg-light;
+        padding: 60px 0;
+        .header-block__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        .advantage{
+            .advantage__item {
+                padding: 12px 14px;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .block-header{
+        padding: 40px 0;
+        .header-block__title {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .advantage{
+            margin-left: -5px;
+            margin-right: -5px;
+            .advantage__item {
+                padding: 12px 14px;
+                line-height: 1.2;
+
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+                margin: 5px;
+            }
         }
     }
 }
