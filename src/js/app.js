@@ -119,7 +119,8 @@ $(document).ready(() =>{
       
     if (!dropdownActive.is(e.target) // клик был не по блоку
           && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
-          && !$(".nav-btn#nav").is(e.target) ) { 
+          && !$(".navbar-toggle#nav").is(e.target) ) { 
+              $(".navbar-toggle").removeClass("navbar-toggle--active");
               dropdownActive.removeClass("navbar-mobile--active");
               $(".navbar-mobile").slideUp();
     }
@@ -127,6 +128,7 @@ $(document).ready(() =>{
   // Hide Navigation on Mobile
   $(window).resize(function(){
     if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
+      $(".navbar-toggle").removeClass("navbar-toggle--active");
       $(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
       $(".navbar-mobile").slideUp();
     }

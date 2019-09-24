@@ -13,4 +13,12 @@
         border: 1px solid #cdd2db;
         margin-right: 10px;
     }
+    .page-item{
+        &.active{
+            .page-link{
+                color: $white;
+                background: $blue;
+            }
+        }
+    }
 }

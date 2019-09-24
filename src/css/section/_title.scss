@@ -1,4 +1,6 @@
 .title{
+    max-width: 100%;
+    overflow-x: hidden;
     padding: 90px 0;
     .heading{
         font-weight: bold;
@@ -9,5 +11,30 @@
         color: #FFFFFF;
 
         opacity: 0.3;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .title{
+        .heading{
+            font-size: 70px;
+            line-height: 74px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .title{
+        padding: 60px 0;
+        .heading{
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .title{
+        .heading{
+            font-size: 40px;
+            line-height: 42px;
+        }
     }
 }

@@ -15,11 +15,12 @@
     <header class="header">
       <div class="container">
         <div class="header__row row no-gutters align-items-center justify-content-between">
-          <div class="header__col"><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a></div>
-          <div class="header__col">
+          <div class="header__col header__col_nav">
             <svg class="navbar-toggle" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
               <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-            </svg>
+            </svg><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a>
+          </div>
+          <div class="header__col">
             <nav class="navbar">
               <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
               <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
@@ -43,14 +44,27 @@
         </div>
       </div>
     </header>
+    <div class="navbar-mobile" id="navMobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Проекты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О компании</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Контакты</a></div>
+      </nav>
+      <form class="form form_search" action="">
+        <input class="input input_search" placeholder="Поиск по сайту" type="search"/>
+        <input class="btn" type="submit"/>
+      </form>
+    </div>
     <main>
       <section class="bg-gradient title">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-6">
+            <div class="col-6 col-sm-12 col-md-12 col-lg-5">
               <h1 class="heading">Услуги компании</h1>
             </div>
-            <div class="col-5"> 
+            <div class="col-5 col-sm-12 col-md-10 col-lg-7">
               <p class="subheading subheading_light">Разработка и внедрение IT-решений</p>
               <div class="subheading-line subheading-line_light"></div>
               <p>Компания “ИНКАМ” - мультивендорный системный интегратор, оказывающий полный спектр ИТ-услуг и предлагающий высококачественные решения, ориентированные на удовлетворение потребностей крупных, средних и небольших компаний различных сфер деятельности.</p>
@@ -61,7 +75,7 @@
       <section class="content">
         <div class="container">
           <div class="row no-gutters">
-            <div class="col-4">
+            <div class="col-4 col-sm-12 col-md-12">
               <div class="task task_tab">
                 <div class="task__title">Предпроектное обследование</div>
                 <div class="task__tab-content"> 
@@ -103,7 +117,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-12 col-md-12">
               <div class="task task_tab">
                 <div class="task__title">Проектирование</div>
                 <div class="task__tab-content"> 
@@ -144,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-sm-12 col-md-12">
               <div class="task task_tab">
                 <div class="task__title">Строительство сети</div>
                 <div class="task__tab-content"> 
@@ -177,24 +191,28 @@
       </section>
       <section class="content content_offset bg-light">
         <div class="container">
-          <p class="h4 mb-40">Внедрение IТ-решений «под ключ» позволит вам:</p>
-          <div class="row advantage advantage_with-icon">
-            <div class="col-4 d-flex mb-20">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-12 col-xl-10 mb-40">
+              <p class="h4 text-md-center text-sm-left">Внедрение IТ-решений «под ключ» позволит вам:</p>
+            </div>
+          </div>
+          <div class="row advantage advantage_with-icon justify-content-md-center">
+            <div class="col-4 d-flex mb-20 col-sm-12 mb-md-20 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">эффективно использовать IT-ресурсы<img class="advantage__icon position-1" src="../img/clipboard-check.svg"/></div>
             </div>
-            <div class="col-4 d-flex mb-20">
+            <div class="col-4 d-flex mb-20 col-sm-12 mb-md-20 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">минимизировать риски с&nbsp;технической стороны<img class="advantage__icon position-2" src="../img/lightbulb.svg"/></div>
             </div>
-            <div class="col-4 d-flex mb-20">
+            <div class="col-4 d-flex mb-20 col-sm-12 mb-md-20 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">снизить затраты на&nbsp;реализацию проекта<img class="advantage__icon position-3" src="../img/credit-card.svg"/></div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 d-flex col-sm-12 mb-md-20 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">грамотно планировать расширение структуры<img class="advantage__icon position-4" src="../img/map.svg"/></div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 d-flex col-sm-12 mb-md-20 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">получить оборудование в&nbsp;короткие сроки<img class="advantage__icon position-5" src="../img/clock.svg"/></div>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-4 d-flex col-sm-12 col-md-8 col-lg-6 col-xl-5">
               <div class="advantage__item">рассчитывать на&nbsp;техподдержку 24/7<img class="advantage__icon position-6" src="../img/diamond.svg"/></div>
             </div>
           </div>
@@ -203,11 +221,11 @@
       <section class="content content_offset">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-8">
+            <div class="col-8 col-md-12 col-lg-7 col-xl-8">
               <p class="h1 mb-40">IT-решения</p>
               <div class="row no-gutters">
-                <div class="col-6 d-flex">
-                  <div class="service service_content-hover">
+                <div class="col-6 d-flex col-sm-12 col-md-6">
+                  <div class="service service_first-child service_content-hover">
                     <div class="service__title">Сетевая инфраструктура</div>
                     <div class="service__content">
                       <p class="mb-0 text-small">
@@ -218,7 +236,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="col-6 d-flex col-sm-12 col-md-6">
                   <div class="service service_content-hover service_bl-hide">
                     <div class="service__title">Информационная безопасность</div>
                     <div class="service__content">
@@ -229,7 +247,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="col-6 d-flex col-sm-12 col-md-6">
                   <div class="service service_content-hover service_bt-hide">
                     <div class="service__title">Связь и коллективная работа</div>
                     <div class="service__content">
@@ -238,7 +256,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="col-6 d-flex col-sm-12 col-md-6">
                   <div class="service service_content-hover service_bt-hide service_bl-hide">
                     <div class="service__title">ЦОД</div>
                     <div class="service__content">
@@ -251,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-md-12 mt-md-40 col-lg-5 col-xl-4">
               <p class="subheading">Нас рекомендуют</p>
               <div class="subheading-line subheading-line_sidebar"></div>
               <div class="slider slider_review">
@@ -284,7 +302,7 @@
             </nav>
           </div>
           <div class="footer__col">
-            <ul class="contacts contacts_inline">
+            <ul class="contacts">
               <li class="contacts__item"><a class="contacts__link contacts__link_email" href="mailto:info@inkam.org.ru">info@inkam.org.ru</a></li>
               <li class="contacts__item"><a class="contacts__link contacts__link_phone" href="tel:+7(495) 792-81-27">+7(495) 792-81-27</a></li>
             </ul>
@@ -295,10 +313,10 @@
     <div class="footer-info">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-sm-12 text-sm-center">
             <p class="mb-0 text-small">© 2019. Все права защищены</p>
           </div>
-          <div class="col-6 text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
+          <div class="col-6 col-sm-12 text-sm-center text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
         </div>
       </div>
     </div>

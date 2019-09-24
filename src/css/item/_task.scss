@@ -41,6 +41,8 @@
     }
 
     &_tab{
+        padding: 30px 0px;
+        padding-right: 20px;
         cursor: pointer;
         transition: .3s;
         .task__title{
@@ -57,11 +59,18 @@
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .task{
         padding: 30px 10px;
+        &_tab{
+            padding: 20px 0;
+            padding-right: 20px;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .task{
         padding: 30px 20px;
+        &_tab{
+            padding: 10px 0;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

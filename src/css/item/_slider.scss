@@ -93,3 +93,19 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        &_catalog{
+            padding: 20px 20px 90px;
+        }
+    }
+    .content{
+        .slider_catalog{
+            .content__title{
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
+    }
+}

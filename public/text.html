@@ -15,11 +15,12 @@
     <header class="header">
       <div class="container">
         <div class="header__row row no-gutters align-items-center justify-content-between">
-          <div class="header__col"><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a></div>
-          <div class="header__col">
+          <div class="header__col header__col_nav">
             <svg class="navbar-toggle" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
               <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-            </svg>
+            </svg><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a>
+          </div>
+          <div class="header__col">
             <nav class="navbar">
               <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
               <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
@@ -43,6 +44,19 @@
         </div>
       </div>
     </header>
+    <div class="navbar-mobile" id="navMobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Проекты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О компании</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Контакты</a></div>
+      </nav>
+      <form class="form form_search" action="">
+        <input class="input input_search" placeholder="Поиск по сайту" type="search"/>
+        <input class="btn" type="submit"/>
+      </form>
+    </div>
     <main>
       <section class="content">
         <div class="container">
@@ -66,27 +80,29 @@
                 <li>list-item-5</li>
               </ul>
               <p>Lorem ipsum dolor sit amet. Praesentium voluptatum deleniti atque corrupti. Ipsam voluptatem, quia non provident, similique sunt. Doloribus asperiores repellat. cumque nihil impedit, quo minus id, quod maxime. Aspernatur aut rerum necessitatibus saepe. Sit voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem eum fugiat. Hic tenetur a sapiente delectus, ut aliquid ex ea voluptate. Sint, obcaecati cupiditate non provident, similique sunt in ea voluptate velit esse.</p>
-              <table>
-                <thead>
-                  <tr>
-                    <th>название столбца 1</th>
-                    <th>название столбца 2</th>
-                    <th>название столбца 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>ячейка 1</td>
-                    <td>ячейка 2</td>
-                    <td>ячейка 3</td>
-                  </tr>
-                  <tr>
-                    <td>ячейка 1</td>
-                    <td>ячейка 2</td>
-                    <td>ячейка 3</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>название столбца 1</th>
+                      <th>название столбца 2</th>
+                      <th>название столбца 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ячейка 1</td>
+                      <td>ячейка 2</td>
+                      <td>ячейка 3</td>
+                    </tr>
+                    <tr>
+                      <td>ячейка 1</td>
+                      <td>ячейка 2</td>
+                      <td>ячейка 3</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -117,10 +133,10 @@
     <div class="footer-info">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-sm-12 text-sm-center">
             <p class="mb-0 text-small">© 2019. Все права защищены</p>
           </div>
-          <div class="col-6 text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
+          <div class="col-6 col-sm-12 text-sm-center text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
         </div>
       </div>
     </div>

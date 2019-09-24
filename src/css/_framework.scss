@@ -37,12 +37,18 @@ p {
     &.lead{
         font-size: 1.15em;
     }
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 ol, ul{
     font-size: 1rem;
     padding: 0;
     margin-bottom: 1.25rem;
     padding-left: 1.25rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 a{
     display: inline-block;
@@ -126,6 +132,14 @@ a{
 .bg-gradient{
     background:  linear-gradient(247.85deg, #0FB5BF 1.5%, #004E96 100%);
     color: $white;
+    .form{
+        .form__agree{
+            color: $light-grey;
+            .checkbox__link{
+                color: $white;
+            }
+        }
+    }
 }
 .bg-light{
     background: $bg-light;
@@ -205,6 +219,10 @@ table, .table{
     .mr-md-0{margin-right: 0}
     .ml-md-0{margin-left: 0}
 
+    
+    .text-md-left{text-align: left;}
+    .text-md-center{text-align: center;}
+    .text-md-right{text-align: right;}
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .d-sm-none{display: none;}
@@ -214,7 +232,6 @@ table, .table{
     .h3,h3{font-size: 1.5rem;}
     .h4,h4{font-size: 1.5rem;}
     .h5,h5{font-size: 1.25rem;}
-    .h6,h6{font-size: 1rem;}
 
     .text-sm-left{text-align: left;}
     .text-sm-center{text-align: center;}

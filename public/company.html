@@ -15,11 +15,12 @@
     <header class="header">
       <div class="container">
         <div class="header__row row no-gutters align-items-center justify-content-between">
-          <div class="header__col"><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a></div>
-          <div class="header__col">
+          <div class="header__col header__col_nav">
             <svg class="navbar-toggle" id="nav" viewBox="0 0 24.00 24.00" xml:space="preserve">
               <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 3,8L 3,7L 20,7L 20,8L 3,8 Z M 20,12L 20,13L 3,13L 3,12L 20,12 Z M 3,17L 20,17L 20,18L 3,18L 3,17 Z"></path>
-            </svg>
+            </svg><a class="header__logo" href="/" title="Компания ИНКАМ системный интегратор"></a>
+          </div>
+          <div class="header__col">
             <nav class="navbar">
               <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
               <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
@@ -43,14 +44,27 @@
         </div>
       </div>
     </header>
+    <div class="navbar-mobile" id="navMobile">
+      <nav class="navbar">
+        <div class="navbar__item"><a class="navbar__link" href="#">Услуги</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Продукты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Проекты</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">О компании</a></div>
+        <div class="navbar__item"><a class="navbar__link" href="#">Контакты</a></div>
+      </nav>
+      <form class="form form_search" action="">
+        <input class="input input_search" placeholder="Поиск по сайту" type="search"/>
+        <input class="btn" type="submit"/>
+      </form>
+    </div>
     <main>
       <section class="bg-gradient title">
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-6">
+            <div class="col-6 col-sm-12 col-md-12 col-lg-5">
               <h1 class="heading">Системный интегратор</h1>
             </div>
-            <div class="col-5"> 
+            <div class="col-5 col-sm-12 col-md-10 col-lg-7">
               <p class="subheading subheading_light">О КОМПАНИИ «ИНКАМ»</p>
               <div class="subheading-line subheading-line_light"></div>
               <p>Мультивендорный системный интегратор созданный профессионалами с многолетним опытом в области коммуникаций и информационных технологий. Компания является надежным поставщиком высокотехнологичных и инновационных IT-решений для вашего бизнеса.  </p>
@@ -61,10 +75,10 @@
       <section class="block-partners">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-3">
+            <div class="col-3 col-sm-12 mb-sm-20 col-md-5 col-lg-4">
               <p class="heading">Нам доверяют:</p>
             </div>
-            <div class="col-9">
+            <div class="col-9 col-sm-12 col-md-7 col-lg-8">
               <div class="slider slider_logo">
                 <div class="slider__item"><img class="img-fluid" src="../img/RT_full_logo.png"/></div>
                 <div class="slider__item"><img class="img-fluid" src="../img/logo.png"/></div>
@@ -78,11 +92,11 @@
       <section class="content content_offset">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-5">
+            <div class="col-5 col-md-12 col-lg-9">
               <p class="h3 mb-40">С нами работают крупнейшие компании по всей России</p>
               <p>ИНКАМ на рынке с 2013 года, и результат нашей работы — это разработка и внедрение более 100 IT-решений и технологий на предприятия, работающие по всей России. </p>
             </div>
-            <div class="col-7"><img class="img-fluid" src="../img/maps-russia.svg"/></div>
+            <div class="col-7 col-md-12 mt-sm-20 col-lg-12"><img class="img-fluid" src="../img/maps-russia.svg"/></div>
           </div>
         </div>
       </section>
@@ -90,25 +104,25 @@
         <div class="container">
           <p class="heading mb-40">ИНКАМ сегодня  — это</p>
           <div class="row">
-            <div class="col-6 d-flex">
+            <div class="col-6 d-flex col-md-12">
               <div class="block-service__block">
                 <p class="h6 text-bold text-blue">Квалифицированные технические специалисты</p>
                 <p>От монтажников до проектировщиков - весь персонал имеет необходимый опыт и уровень компетенций и несут ответственность за каждый этап работы: от создания проектной документации до сдачи проекта “под ключ”. Являясь авторизированными партнерами ведущих вендоров, мы имеем в своем штате инженеров, прошедших многоступенчатое обучение и предоставляющих квалифицированные сервисные услуги: от ввода техники до составление индивидуального контракта на обслуживание (SLA).</p>
               </div>
             </div>
-            <div class="col-6 d-flex">
+            <div class="col-6 d-flex col-md-12 mt-md-40">
               <div class="block-service__block">
                 <p class="h6 text-bold text-blue">Работа с любой компанией в любом городе России</p>
                 <p>Нам важен каждый заказчик! Предоставляем услуги для крупных, средних и небольших компаний. Работаем по всей России вне зависимости от региона и предоставляем услуги по моделированию, поставки оборудования и интеграции высокотехнологичных решений. </p>
               </div>
             </div>
-            <div class="col-6 d-flex mt-40">
+            <div class="col-6 d-flex mt-40 col-md-12">
               <div class="block-service__block">
                 <p class="h6 text-bold text-blue">Высокая скорость обработки запросов</p>
                 <p>Оперативная обработка потребностей заказчика и выдача предложений, позволит разработать решение даже в короткие сроки. После завершения проекта осуществляем техническую поддержку 24/7: мы всегда остаемся “на связи” и готовы помочь вам в решении технических вопросов и устранения любых неполадок. </p>
               </div>
             </div>
-            <div class="col-6 d-flex mt-40">
+            <div class="col-6 d-flex mt-40 col-md-12">
               <div class="block-service__block">
                 <p class="h6 text-bold text-blue">Решения под потребности заказчика</p>
                 <p>С 2013 года моделируем и разрабатываем решения в соответствии с потребностями заказчика. Опыт позволяет проводить объективный анализ инфраструктур и разрабатывать работающие рекомендации. </p>
@@ -120,20 +134,20 @@
       <section class="content content_offset">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-5">
+            <div class="col-5 col-md-12 col-lg-7 col-xl-6">
               <p class="h3 mb-40">Сотрудничаем с ведущими мировыми вендорами</p>
               <p>Качество продукции проверено годами и является эталоном качественных технологий, позволяет гарантировать высокое качество всего поставляемого оборудования. Средние сроки поставки составляют 4-8 недель.</p>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-md-12 mt-md-40 col-lg-5 col-xl-6">
               <div class="row align-items-center">
-                <div class="col-3 text-center mb-20"><img class="img-fluid" src="../img/image-1.jpg"/></div>
-                <div class="col-3 text-center mb-20"><img class="img-fluid" src="../img/image-6.jpg"/></div>
-                <div class="col-3 text-center mb-20"><img class="img-fluid" src="../img/image-4.jpg"/></div>
-                <div class="col-3 text-center mb-20"><img class="img-fluid" src="../img/image-6.jpg"/></div>
-                <div class="col-3 text-center"><img class="img-fluid" src="../img/image-7.jpg"/></div>
-                <div class="col-3 text-center"><img class="img-fluid" src="../img/image-3.jpg"/></div>
-                <div class="col-3 text-center"><img class="img-fluid" src="../img/image-5.jpg"/></div>
-                <div class="col-3 text-center"><img class="img-fluid" src="../img/image-3.jpg"/></div>
+                <div class="col-3 text-center mb-20 col-sm-4 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-1.jpg"/></div>
+                <div class="col-3 text-center mb-20 col-sm-4 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-6.jpg"/></div>
+                <div class="col-3 text-center mb-20 col-sm-4 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-4.jpg"/></div>
+                <div class="col-3 text-center mb-20 col-sm-4 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-6.jpg"/></div>
+                <div class="col-3 text-center col-sm-4 mb-sm-20 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-7.jpg"/></div>
+                <div class="col-3 text-center col-sm-4 mb-lg-20 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-3.jpg"/></div>
+                <div class="col-3 text-center col-sm-4 col-md-3 col-lg-6 mb-lg-20 mb-sm-0"><img class="img-fluid" src="../img/image-5.jpg"/></div>
+                <div class="col-3 text-center col-sm-4 col-md-3 col-lg-6"><img class="img-fluid" src="../img/image-3.jpg"/></div>
               </div>
             </div>
           </div>
@@ -154,7 +168,7 @@
             </nav>
           </div>
           <div class="footer__col">
-            <ul class="contacts contacts_inline">
+            <ul class="contacts">
               <li class="contacts__item"><a class="contacts__link contacts__link_email" href="mailto:info@inkam.org.ru">info@inkam.org.ru</a></li>
               <li class="contacts__item"><a class="contacts__link contacts__link_phone" href="tel:+7(495) 792-81-27">+7(495) 792-81-27</a></li>
             </ul>
@@ -165,10 +179,10 @@
     <div class="footer-info">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-sm-12 text-sm-center">
             <p class="mb-0 text-small">© 2019. Все права защищены</p>
           </div>
-          <div class="col-6 text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
+          <div class="col-6 col-sm-12 text-sm-center text-right"><a class="text-small footer-info__link" href="/">Сайт разработан студией «SOHO»</a></div>
         </div>
       </div>
     </div>

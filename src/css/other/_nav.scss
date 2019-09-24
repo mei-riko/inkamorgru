@@ -19,7 +19,7 @@
 }
 .navbar-mobile{
     display: none;
-    padding: 20px 20px 40px;
+    padding: 20px 40px 40px;
     .navbar{
         flex-wrap: wrap;
         flex-direction: row;
@@ -34,5 +34,10 @@
     .navbar-toggle{
         display: block;
         margin-right: 20px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .navbar-mobile{
+        padding: 20px 20px 40px;
     }
 }

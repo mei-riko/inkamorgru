@@ -39,6 +39,7 @@
 
             width: 100%;
             height: 100%;
+            padding: 20px 40px;
 
             display: flex;
             align-items: center;
@@ -49,7 +50,6 @@
 
             transition: .4s;
         }
-
         &:hover{
             .service__title{
                 opacity: 0;
@@ -113,18 +113,28 @@
     &_project{
         display: flex;
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 40px 30px;
     }
     &_highlight{
         flex-direction: row;
         align-items: center;
         padding: 70px 40px;
+        .service__title{
+            font-size: 1.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .service{
         &_modal-btn{
             padding: 40px 20px;
+        }
+        &_project{
+            .service__title{
+                margin-top: 1.5rem;
+            }
         }
     }
 }
@@ -134,11 +144,49 @@
             border: 1px solid $light-grey;
         }
     }
+    .service{
+        &_highlight{
+            padding: 40px 20px;
+            .service__title{
+                font-size: 1.25rem;
+            }
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .service{
+        &_content-hover{
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            padding: 20px;
+            .service__title{
+                font-weight: bold;
+            }
+            .service__content{
+                position: unset;
+                opacity: 1;
+                background: none;
+                padding: 20px 0;
+                height: auto;
+            }
+            &:hover{
+                .service__title{
+                    opacity: 1;
+                }
+                .service__content{
+                    opacity: 1;
+                }
+            }
+        }
         &_modal-btn{
             padding: 20px 40px;
+        }
+        &_project{
+            padding: 30px 20px;
+        }
+        &_highlight{
+            padding: 30px 20px;
         }
     }
 

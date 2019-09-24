@@ -376,7 +376,7 @@
 //     }
 // }
 
-// @media (max-width: map-get($grid-breakpoints, 'md')) {
+@media (max-width: map-get($grid-breakpoints, 'md')) {
 //     .flex-md-column,.flex-md-row {
 //         -webkit-box-orient:horizontal!important;
 //         -webkit-box-direction: normal!important;
@@ -458,11 +458,11 @@
 //         justify-content: flex-end!important
 //     }
 
-//     .justify-content-md-center {
-//         -webkit-box-pack: center!important;
-//         -ms-flex-pack: center!important;
-//         justify-content: center!important
-//     }
+    .justify-content-md-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important
+    }
 
 //     .justify-content-md-between {
 //         -webkit-box-pack: justify!important;
@@ -564,7 +564,7 @@
 //         -ms-flex-item-align: stretch!important;
 //         align-self: stretch!important
 //     }
-// }
+}
 
 // @media (max-width: map-get($grid-breakpoints, 'lg')) {
 //     .flex-lg-column,.flex-lg-row {

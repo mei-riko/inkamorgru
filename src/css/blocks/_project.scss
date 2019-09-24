@@ -8,3 +8,21 @@
         padding: 40px 0;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .block-project{
+        padding: 40px 0;
+    
+        .block-project__col{
+            padding-right: 40px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .block-project{
+        padding: 40px 0;
+    
+        .block-project__col{
+            padding: 0 0 40px;
+        }
+    }
+}

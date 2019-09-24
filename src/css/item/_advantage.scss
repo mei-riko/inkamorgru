@@ -48,3 +48,27 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage{
+        &_with-icon{
+            .advantage__item{
+                font-size: 12px;
+                padding: 16px 12px;
+                padding-left: 90px;
+                min-height: 75px;
+                height: auto;
+            }
+            .advantage__icon{
+                top: 50%;
+                transform: translateY(-50%);
+                &.position-1{top:50%;}
+                &.position-2{top:50%;}
+                &.position-3{top:50%;}
+                &.position-4{top:50%;}
+                &.position-5{top:50%;}
+                &.position-6{top:50%;}  
+            }
+        }
+    }
+}

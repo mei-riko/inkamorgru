@@ -9,6 +9,9 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
     padding: 10px 0;
+
+    max-width: 100%;
+    overflow-x: hidden;
     
     .header__row{
         flex-wrap: nowrap;

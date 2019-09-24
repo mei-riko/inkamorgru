@@ -194,7 +194,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
     if (!dropdownActive.is(e.target) // клик был не по блоку
     && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
-    && !(0, _jquery2.default)(".nav-btn#nav").is(e.target)) {
+    && !(0, _jquery2.default)(".navbar-toggle#nav").is(e.target)) {
+      (0, _jquery2.default)(".navbar-toggle").removeClass("navbar-toggle--active");
       dropdownActive.removeClass("navbar-mobile--active");
       (0, _jquery2.default)(".navbar-mobile").slideUp();
     }
@@ -202,6 +203,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   // Hide Navigation on Mobile
   (0, _jquery2.default)(window).resize(function () {
     if ((0, _jquery2.default)(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches) {
+      (0, _jquery2.default)(".navbar-toggle").removeClass("navbar-toggle--active");
       (0, _jquery2.default)(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
       (0, _jquery2.default)(".navbar-mobile").slideUp();
     }
