@@ -117,6 +117,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   if ((0, _jquery2.default)('.slider_logo').length > 0) {
     var $slickElementLogo = (0, _jquery2.default)('.slider.slider_logo');
     $slickElementLogo.slick({
+      lazyLoad: 'ondemand',
       slidesToShow: 3,
       slidesToScroll: 3,
       arrows: true,
@@ -200,7 +201,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       (0, _jquery2.default)(".navbar-mobile").slideUp();
     }
   });
-  // Hide Navigation on Mobile
+  // Hide Navigation on Desktop
   (0, _jquery2.default)(window).resize(function () {
     if ((0, _jquery2.default)(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches) {
       (0, _jquery2.default)(".navbar-toggle").removeClass("navbar-toggle--active");

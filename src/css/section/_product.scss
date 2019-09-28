@@ -8,6 +8,10 @@
     .vendor__item{
         position: relative;
         padding: 20px;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // height: 100%;
     }
     .vendor__modal{
         position: absolute;
@@ -67,13 +71,14 @@
         right: 12px;
     }
     .solution__info{
-        color: $grey;
+        font-size: 12px;
+        color: #898a95;
     }
     .solution__title{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
+        line-height: 18px;
         margin-top: 10px;
-
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){

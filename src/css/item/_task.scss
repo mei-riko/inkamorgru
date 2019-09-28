@@ -24,7 +24,7 @@
             width: 20px;
             height: 20px;
 
-            background: url("../img/plus-gradient.svg") no-repeat center / contain;
+            background: url("../img/diagram.svg") no-repeat center / 16px;
         }
     }
     .task__tab-content{
@@ -47,6 +47,9 @@
         transition: .3s;
         .task__title{
             transition: .3s;
+            &:before{
+                background: url("../img/plus-gradient.svg") no-repeat center / contain;
+            }
         }
         &:hover{
             color: $blue;
